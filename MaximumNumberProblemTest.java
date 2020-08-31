@@ -26,4 +26,16 @@ public class MaximumNumberProblemTest {
     public void givenIntegerMaxNumber_WhenAtThirdPosition_ShouldReturnSameNumber() {
         Assert.assertSame(30, maximumNumberProblemObj.findMaximumNumber(10, 20, 30));
     }
+    @Test
+    public void givenFloatMaxNumber_WhenAtFirstPosition_ShouldReturnSameNumber() {
+        Assert.assertEquals(50.2f,maximumNumberProblemObj.findMaximumNumber(50.2f,20.2f,30.2f),0.0f);
+    }
+    @Test
+    public void givenFloatMaxNumber_WhenAtSecondPosition_ShouldReturnSameNumber() {
+        Assert.assertEquals(50.2f,maximumNumberProblemObj.findMaximumNumber(5.2f,50.2f,30.2f),0.0f);
+    }
+    @Test
+    public void givenFloatMaxNumber_WhenAtThirdPosition_ShouldReturnSameNumber() {
+        Assert.assertEquals(30.2f,maximumNumberProblemObj.findMaximumNumber(10.2f,20.2f,30.2f),0.0f);
+    }
 }
