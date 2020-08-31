@@ -38,4 +38,18 @@ public class MaximumNumberProblemTest {
     public void givenFloatMaxNumber_WhenAtThirdPosition_ShouldReturnSameNumber() {
         Assert.assertEquals(30.2f,maximumNumberProblemObj.findMaximumNumber(10.2f,20.2f,30.2f),0.0f);
     }
+    @Test
+    public void givenStringValue_WhenAtFirstPosition_ShouldReturnMaxStringValue() {
+        Assert.assertEquals("xyz", maximumNumberProblemObj.findMaximumNumber("xyz", "sam", "abc"));
+    }
+
+    @Test
+    public void givenStringValue_WhenAtSecondPosition_ShouldReturnMaxStringValue() {
+        Assert.assertEquals("xyz", maximumNumberProblemObj.findMaximumNumber("abc", "xyz", "sam"));
+    }
+
+    @Test
+    public void givenStringValue_WhenAtThirdPosition_ShouldReturnMaxStringValue() {
+        Assert.assertEquals("xyz", maximumNumberProblemObj.findMaximumNumber("abc", "sam", "xyz"));
+    }
 }
